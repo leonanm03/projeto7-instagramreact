@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 
 function Teste() {
     return (
-        <h1>Instagram React</h1>
+        <h1>Projeto Instagram React</h1>
     )
 }
 
