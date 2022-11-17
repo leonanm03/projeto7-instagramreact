@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* conf gerais da página */
+body {
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  height: 2000px;
+  width: 1366px;
+  background-color: #e5e5e5;
+}
+
+.top-menu {
+  position: fixed;
+  top: 0px;
+  left: auto;
+  background-color: white;
+  width: 1366px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 22px;
+  padding-right: 22px;
+  align-items: center;
+  height: 54px;
+  z-index: 3;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.top-menu-mobile {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19px;
+  width: 145px;
+}
+
+/*linha vertical no topo esquerdo*/
+.line-vertical {
+  height: 22px;
+  width: 1px;
+  background-color: #dbdbdb;
+}
+
+.img-logo {
+  height: 29px;
+}
+
+.img-logo-mobile {
+  display: none;
+}
+
+.search {
+  background-color: #fafafa;
+  width: 215px;
+  height: 28px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.search::placeholder {
+  text-align: center;
+  background: #fafafa;
+  border-radius: 3px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  width: 143px;
+}
+
+.container-page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 54px;
+}
+
+.vertical {
+  width: 614px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 29px;
+}
+
+.stories {
+  background-color: white;
+  position: relative;
+  display: flex;
+  height: 118px;
+  width: 614px;
+  margin-top: 34px;
+  margin-bottom: 24px;
+  padding-left: 4px;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.arrow {
+  position: absolute;
+  right: 8px;
+  z-index: 2;
+  color: white;
+  font-size: 26px;
+  filter: drop-shadow(0 0 10px black);
+}
+
+.stories-box {
+  position: relative;
+  width: 66px;
+  height: 81px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 14px;
+}
+
+.img-stories {
+  position: absolute;
+  top: 5px;
+  z-index: 1;
+  width: 56px;
+}
+
+.img-stories-border {
+  width: 66px;
+  position: absolute;
+  z-index: 0;
+}
+
+.stories-name {
+  position: absolute;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  bottom: 0;
+}
+
+.posts {
+  height: 100%;
+  width: 614px;
+}
+
+.post-box {
+  width: 614px;
+  background-color: white;
+  flex-shrink: 0;
+  margin-bottom: 60px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.post-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-owner {
+  height: 61px;
+  display: flex;
+  align-items: center;
+}
+
+.post-owner img {
+  width: 32px;
+  margin-left: 17px;
+}
+
+.post-owner h2 {
+  width: 109px;
+  height: 21px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.ellipsis {
+  align-self: center;
+  margin-right: 18px;
+}
+
+.post-img {
+  width: 100%;
+}
+
+.post-bottom {
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+}
+
+.post-bottom div {
+  width: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  font-size: 18px;
+}
+
+.post-bottom ion-icon {
+  align-self: center;
+  font-size: 18px;
+}
+
+.likes {
+  display: flex;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 17px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.likes img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.likes span {
+  font-weight: bold;
+}
+
+.bottom-menu {
+  display: none;
+}
+
+.sidebar {
+  width: 297px;
+  margin-top: 34px;
+  margin-bottom: 17px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.perfil img {
+  width: 56px;
+  margin-right: 17px;
+}
+
+.perfil h2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.perfil p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.suggested {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 17px;
+}
+
+.suggested-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.suggested-left {
+  display: flex;
+}
+
+.suggested-left img {
+  width: 32px;
+  margin-right: 11px;
+}
+
+.suggested-left h2 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.suggested-left p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.suggested-box a {
+  font-weight: bold;
+  color: #139ef2;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #8e8e8e;
+}
+
+.light-gray {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #c7c7c7;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 935px) {
+
+  body,
+  .top-menu,
+  .container-page,
+  .post-box,
+  .vertical {
+    width: 100%;
+  }
+
+  .vertical {
+    margin-right: 0px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 614px) {
+  .top-menu-mobile {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    width: 100vw;
+    justify-content: space-between;
+    padding-left: 22px;
+    padding-right: 22px;
+    align-items: center;
+    height: 54px;
+    z-index: 3;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .top-menu-mobile a{
+  font-size: 19px;
+  }
+
+  .top-menu {
+    display: none;
+  }
+
+  .post-box,
+  .stories,
+  .posts {
+    width: 100%;
+    border-radius: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .stories {
+    margin: 0;
+    background-color: #e5e5e5;
+  }
+
+  .stories ion-icon {
+    display: none;
+  }
+
+  .bottom-menu {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 21px;
+    bottom: 0;
+    z-index: 10;
+    background-color: white;
+    border-top: 1px solid #dbdbdb;
+    height: 54px;
+  }
+
+  .bottom-menu a {
+    font-size: 17px;
+  }
+}
