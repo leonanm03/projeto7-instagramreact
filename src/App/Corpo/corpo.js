@@ -1,3 +1,4 @@
+import BottomBar from "./bottombar";
 import Posts from "./Posts/posts";
 import Stories from "./Stories/stories";
 
@@ -6,29 +7,8 @@ export default function Corpo() {
         <div className="container-page">
             <div className="vertical">
                 <Stories />
-
                 <Posts />
-
-
-                {/* <!-- menu inferior para modo mobile--> */}
-                <div className="bottom-menu">
-                    <a href="https://www.instagram.com/">
-                        <ion-icon name="home"></ion-icon
-                        ></a>
-                    <a href="https://www.instagram.com/">
-                        <ion-icon name="search-outline"></ion-icon
-                        ></a>
-                    <a href="https://www.instagram.com/">
-                        <ion-icon name="add-circle-outline"></ion-icon
-                        ></a>
-                    <a href="https://www.instagram.com/">
-                        <ion-icon name="heart-outline"></ion-icon
-                        ></a>
-                    <a href="https://www.instagram.com/">
-                        <ion-icon name="person-outline"></ion-icon
-                        ></a>
-                </div>
-                {/* <!--fim  menu inferior para modo mobile--> */}
+                <BottomBar />
             </div>
 
             {/* <!-- inicio sidebar--> */}

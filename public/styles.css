@@ -226,6 +226,11 @@ body {
   font-size: 18px;
 }
 
+.post-bottom ion-icon:hover {
+  cursor: pointer;
+}
+
+
 .likes {
   display: flex;
   font-weight: 300;
@@ -370,8 +375,9 @@ body {
     z-index: 3;
     border-bottom: 1px solid #dbdbdb;
   }
-  .top-menu-mobile a{
-  font-size: 19px;
+
+  .top-menu-mobile a {
+    font-size: 19px;
   }
 
   .top-menu {
