@@ -268,6 +268,9 @@ body {
 
 .perfil img {
   width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
   margin-right: 17px;
 }
 
