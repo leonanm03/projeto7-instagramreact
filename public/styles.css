@@ -114,7 +114,7 @@ body {
   flex-shrink: 0;
 }
 
-.arrow {
+.stories ion-icon {
   position: absolute;
   right: 8px;
   z-index: 2;
